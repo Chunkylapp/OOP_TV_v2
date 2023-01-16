@@ -5,7 +5,6 @@ import pages.PageInterface;
 import user.UserInterface;
 
 import java.util.ArrayList;
-import java.util.Queue;
 import java.util.Stack;
 
 
@@ -26,7 +25,6 @@ public class DataBase {
     private UserInterface currentUser;
     private String currentMovie;
 
-    // to implement for movies
 
     /**
      * Implicit constructor
@@ -155,14 +153,21 @@ public class DataBase {
         return null;
     }
 
-    public boolean stackNull(){
-        if(history == null || history.size() < 1){
+    /**
+     * Checker for the stack
+     * @return weather or not the stack is null
+     */
+    public boolean stackNull() {
+        if (history == null || history.size() < 1) {
             return true;
         }
         return false;
     }
 
-    public void clearStack(){
+    /**
+     * Clears the stack
+     */
+    public void clearStack() {
         history = null;
     }
 

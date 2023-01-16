@@ -1,7 +1,6 @@
 package notification;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 /**
@@ -66,7 +65,7 @@ public class Notification {
      * Method returns the notification object as a json object node
      * @return the object node
      */
-    public ObjectNode getJson(){
+    public ObjectNode getJson() {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();
         node.put("movieName", movieName);

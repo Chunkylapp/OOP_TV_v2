@@ -358,6 +358,10 @@ public class StandardUser implements UserInterface {
         return arrayNode;
     }
 
+    /**
+     * Converts the notification array to a json object
+     * @return the json object
+     */
     public ArrayNode getNotificationsJson() {
         ObjectMapper mapper = new ObjectMapper();
         ArrayNode arrayNode = mapper.createArrayNode();

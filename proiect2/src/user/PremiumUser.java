@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import movie.Movie;
 import notification.Notification;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -356,6 +355,11 @@ public class PremiumUser implements UserInterface {
         return arrayNode;
     }
 
+
+    /**
+     * Converts the notification array to a json object
+     * @return the json object
+     */
     public ArrayNode getNotificationsJson() {
         ObjectMapper mapper = new ObjectMapper();
         ArrayNode arrayNode = mapper.createArrayNode();
